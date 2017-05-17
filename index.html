@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="GrAINFluxes Photo Explorer">
+    <meta name="author" content="Mike Davlantes, geodav.tech">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <title>GrAINFluxes Photo Explorer</title>
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid fill-height">
+        <div class="row fill-height">
+            <div class="col-sm-8 fill-height">
+                <div id="map" class="fill-height"></div>
+            </div>
+            <div class="col-sm-4">
+                <h3>GrAINFluxes Photo Explorer</h3>
+                <p>
+                    Click a photo marker on the map to see the picture and whatever information we have about it. Sample sites are marked in red.
+                </p>
+                <a class="photo-title-link" href="media/photos/7.jpg" target="_blank"><h2 id="photo-title">7.jpg</h2></a>
+                <img src="media/photos/7.jpg" id='selected-photo' class="img-responsive img-thumbnail">
+                <div id="date-time">2013-07-12, 4:11:52 PM local time</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/geo.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1bvELA11Q_y8-2Gbk_Dwza4tpMtFLBTw&callback=initMap"></script>
+</body>
+
+</html>
