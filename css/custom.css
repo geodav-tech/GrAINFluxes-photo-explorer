@@ -11,6 +11,6 @@ body,
     height: 100%;
 }
 
-#photo-title {
+.photo-title {
     text-align: center;
 }
