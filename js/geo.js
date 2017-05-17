@@ -1,4 +1,5 @@
 var map;
+var infowindow;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -6,6 +7,7 @@ function initMap() {
         zoom: 9,
         mapTypeId: 'satellite'
     });
+    infowindow = new google.maps.InfoWindow();
 }
 
 $(document).ready(function() {
@@ -18,5 +20,10 @@ $(document).ready(function() {
         $('#photo-title').html(event.feature.getProperty("name"));
         $('#selected-photo').attr('src', 'media/photos/' + event.feature.getProperty("name"));
         $('#date-time').html(event.feature.getProperty("date") + ', ' + event.feature.getProperty("time") + ' local time');
+
+        infowindow.setContent(event.feature.getProperty("name"));
+        infowindow.setPosition(event.feature.getGeometry().get());
+        infowindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+        infowindow.open(map);
     });
 });
