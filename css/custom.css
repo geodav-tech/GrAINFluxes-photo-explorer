@@ -6,7 +6,7 @@ body,
     padding: 0;
 }
 
-.col-md-4 {
+.col-sm-4 {
     overflow-y: scroll;
     height: 100%;
 }
